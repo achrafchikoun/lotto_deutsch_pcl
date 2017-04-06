@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App2.AdMob;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,9 +12,13 @@ namespace App2
 {
     public partial class MainPage : ContentPage
     {
+        IAdInterstitial adInterstitial;
+
         public MainPage()
         {
             InitializeComponent();
+            adInterstitial = DependencyService.Get<IAdInterstitial>();
+
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
@@ -41,6 +46,11 @@ namespace App2
             {
                 Debug.WriteLine(@"ERROR {0}", ex.Message);
             }
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            adInterstitial.ShowAd();
         }
     }
 }

@@ -2,9 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App2"
-             x:Class="App2.MainPage">
+             x:Class="App2.MainPage"
+             xmlns:Ad="clr-namespace:App2.AdMob;assembly=App2">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Blue">
 
-    <Button Text="click me" Clicked="Button_Clicked" VerticalOptions="Center" 
+        <StackLayout Orientation="Vertical" BackgroundColor="Green" VerticalOptions="Start">
+            <Button Text="Call API" Clicked="Button_Clicked" VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+            <Button Text="AdMob Interstitial" Clicked="Button_Clicked_1" VerticalOptions="Center" 
            HorizontalOptions="Center"/>
+        </StackLayout>
 
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" BackgroundColor="Red">
+            <Ad:AdBanner Size="SmartBannerPortrait" HorizontalOptions="Center" VerticalOptions="End"/>
+        </StackLayout>
+        
+    </StackLayout>
 </ContentPage>
