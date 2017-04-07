@@ -1,4 +1,5 @@
 ﻿using App2.AdMob;
+using Plugin.Connectivity;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -17,8 +18,13 @@ namespace App2
         public MainPage()
         {
             InitializeComponent();
+
             adInterstitial = DependencyService.Get<IAdInterstitial>();
 
+            if(!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Alert", "No internet access.", "OK");
+            }
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
@@ -51,6 +57,18 @@ namespace App2
         private void Button_Clicked_1(object sender, EventArgs e)
         {
             adInterstitial.ShowAd();
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new Page1());
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(@"ERROR {0}", ex.Message);
+            }
         }
     }
 }

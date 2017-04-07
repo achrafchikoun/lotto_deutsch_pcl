@@ -4,16 +4,18 @@
              xmlns:local="clr-namespace:App2"
              x:Class="App2.MainPage"
              xmlns:Ad="clr-namespace:App2.AdMob;assembly=App2">
-    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Blue">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
 
-        <StackLayout Orientation="Vertical" BackgroundColor="Green" VerticalOptions="Start">
+        <StackLayout Orientation="Vertical" VerticalOptions="Start">
             <Button Text="Call API" Clicked="Button_Clicked" VerticalOptions="Center" 
            HorizontalOptions="Center" />
             <Button Text="AdMob Interstitial" Clicked="Button_Clicked_1" VerticalOptions="Center" 
            HorizontalOptions="Center"/>
+            <Button Text="Next page" Clicked="Button_Clicked_2" VerticalOptions="Center" 
+           HorizontalOptions="Center"/>
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" BackgroundColor="Red">
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
             <Ad:AdBanner Size="SmartBannerPortrait" HorizontalOptions="Center" VerticalOptions="End"/>
         </StackLayout>
         
