@@ -46,9 +46,12 @@ namespace App2
             {
                 Device.BeginInvokeOnMainThread(() =>
                 {
-                    Application.Current.MainPage = new NavigationPage(new MainPage());
-                    Navigation.PushAsync(new MainPage());
-                    Debug.WriteLine("ok");
+                    Application.Current.MainPage = new NavigationPage(new HomePage())
+                    {
+                        BarBackgroundColor = Color.FromHex("#e3bd00"),
+                        BarTextColor = Color.White,
+                    };
+                    Navigation.PushAsync(new HomePage());
                 });
                 
             }

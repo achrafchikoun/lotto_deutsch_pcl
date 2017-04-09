@@ -13,6 +13,7 @@ using Xamarin.Forms;
 using App2.Droid;
 using App2.AdMob;
 using Android.Gms.Ads;
+using System.Threading;
 
 [assembly: Dependency(typeof(AdInterstitial_Droid))]
 namespace App2.Droid
@@ -27,21 +28,38 @@ namespace App2.Droid
 
             // TODO: change this id to your admob id
             interstitialAd.AdUnitId = "ca-app-pub-3940256099942544/1033173712";
-            LoadAd();
+            ShowAd();
         }
 
         void LoadAd()
         {
             var requestbuilder = new AdRequest.Builder();
             interstitialAd.LoadAd(requestbuilder.Build());
+            interstitialAd.AdListener = new AdListener(Android.App.Application.Context, interstitialAd);
         }
 
         public void ShowAd()
         {
-            if (interstitialAd.IsLoaded)
-                interstitialAd.Show();
-
             LoadAd();
+        }
+
+        class AdListener : Android.Gms.Ads.AdListener
+        {
+            Context main;
+            InterstitialAd interstitialAd;
+
+            public AdListener(Context innerMain, InterstitialAd interstitial)
+            {
+                main = innerMain;
+                interstitialAd = interstitial;
+            }
+
+            public override void OnAdLoaded()
+            {
+                base.OnAdLoaded();
+                if (interstitialAd.IsLoaded)
+                    interstitialAd.Show();
+            }
         }
     }
 }

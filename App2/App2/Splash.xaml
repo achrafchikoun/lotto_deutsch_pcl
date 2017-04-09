@@ -3,4 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Splash"
              BackgroundColor="#e3bd00">
+    <StackLayout Orientation="Vertical">
+        <Image Source="lotto.png" Aspect="AspectFit" WidthRequest="200" HorizontalOptions="Center" Margin="0, 40, 0, 0"/>
+        <Image Source="eurojackpot.png" Aspect="AspectFit" WidthRequest="160" HorizontalOptions="Center" Margin="0, 40, 0, 0"/>
+        <Image Source="gluecksspirale.png" Aspect="AspectFit" WidthRequest="200" HorizontalOptions="Center" Margin="0, 40, 0, 0"/>
+        <Image Source="keno.png" Aspect="AspectFit" WidthRequest="100" HorizontalOptions="Center" Margin="0, 40, 0, 0"/>
+        <Label Text="Laden ... Bitte warten." FontSize="18" TextColor="#c80513" HorizontalOptions="Center" Margin="0, 60, 0, 0"/>
+        <Label Text="VERSION 1.9" FontSize="12" TextColor="#c80513" HorizontalOptions="Center" Margin="0, 5, 0, 0"/>
+    </StackLayout>
 </ContentPage>

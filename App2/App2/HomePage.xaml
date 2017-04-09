@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.HomePage"
+             xmlns:Ad="clr-namespace:App2.AdMob;assembly=App2"
+             Title="Lotto Deutschland">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ScrollView VerticalOptions="Start">
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="5, 10, 5, 0">
+
+                <!-- LOTTO START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5">
+                            <Image Source="lotto.png" Aspect="AspectFit" WidthRequest="130" HorizontalOptions="Start" />
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                <Label Text="Samstag, 28.01.2017" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Image Source="calendar.png" Aspect="AspectFit" WidthRequest="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="#565556" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#dddddd" Margin="8, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10">
+                            <Image Source="spiel77_blue.png" Aspect="AspectFit" WidthRequest="100" VerticalOptions="Center"/>
+                            <Label Text="9 2 9 8 3 2 9" TextColor="#0096cf" FontSize="22" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 0, 5, 10">
+                            <Image Source="super6_purple.png" Aspect="AspectFit" WidthRequest="100" VerticalOptions="Center"/>
+                            <Label Text="3 3 8 1 7 9" TextColor="#c30062" FontSize="22" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 0, 5, 10">
+                            <Label Text="Nächste Ziehung" TextColor="#565556" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+                            <Label Text="Mittwoch, 18:25 Uhr" TextColor="#565556" FontSize="18" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button Text="Detail" TextColor="#565556" BackgroundColor="White" FontSize="18" FontAttributes="Bold" Margin="10, 0, 0, 0" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Start"/>
+                            <Button Text="Historisch" TextColor="#8a6d3b" BackgroundColor="White" FontSize="18" FontAttributes="Bold" Margin="0, 0, 10, 0" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <!-- LOTTO END -->
+
+                <!-- EUROJACKPOT START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5">
+                            <Image Source="eurojackpot.png" Aspect="AspectFit" WidthRequest="130" HorizontalOptions="Start" />
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                <Label Text="Samstag, 28.01.2017" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Image Source="calendar.png" Aspect="AspectFit" WidthRequest="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#e9bd00"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#e9bd00" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#e9bd00" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#e9bd00" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#e9bd00" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="#552400" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="White" Margin="8, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 5, 5, 10" HorizontalOptions="Center">
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#e9bd00"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#e9bd00" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="#552400" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="White" Margin="8, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10">
+                            <Label Text="Annahmeschluss" TextColor="#565556" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+                            <Label Text="Freitag, 19:00 Uhr" TextColor="#565556" FontSize="18" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button Text="Detail" TextColor="#565556" BackgroundColor="White" FontSize="18" FontAttributes="Bold" Margin="10, 0, 0, 0" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Start"/>
+                            <Button Text="Historisch" TextColor="#8a6d3b" BackgroundColor="White" FontSize="18" FontAttributes="Bold" Margin="0, 0, 10, 0" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <!-- EUROJACKPOT END -->
+
+                <!-- GLUECKSSPIRALE START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5">
+                            <Image Source="gluecksspirale.png" Aspect="AspectFit" WidthRequest="130" HorizontalOptions="Start" />
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                <Label Text="Samstag, 28.01.2017" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Image Source="calendar.png" Aspect="AspectFit" WidthRequest="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 5, 5, 10" HorizontalOptions="Center">
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10">
+                            <Image Source="spiel77_blue.png" Aspect="AspectFit" WidthRequest="100" VerticalOptions="Center"/>
+                            <Label Text="9 2 9 8 3 2 9" TextColor="#0096cf" FontSize="22" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 0, 5, 10">
+                            <Image Source="super6_purple.png" Aspect="AspectFit" WidthRequest="100" VerticalOptions="Center"/>
+                            <Label Text="3 3 8 1 7 9" TextColor="#c30062" FontSize="22" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 0, 5, 10">
+                            <Label Text="Nächste Ziehung" TextColor="#565556" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+                            <Label Text="Mittwoch, 18:25 Uhr" TextColor="#565556" FontSize="18" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button Text="Detail" TextColor="#565556" BackgroundColor="White" FontSize="18" FontAttributes="Bold" Margin="10, 0, 0, 0" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Start"/>
+                            <Button Text="Historisch" TextColor="#8a6d3b" BackgroundColor="White" FontSize="18" FontAttributes="Bold" Margin="0, 0, 10, 0" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <!-- GLUECKSSPIRALE END -->
+
+                <!-- KENO START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5">
+                            <Image Source="keno.png" Aspect="AspectFit" WidthRequest="90" HorizontalOptions="Start" />
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                <Label Text="Samstag, 28.01.2017" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Image Source="calendar.png" Aspect="AspectFit" WidthRequest="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 5, 5, 10" HorizontalOptions="Center">
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 5, 5, 10" HorizontalOptions="Center">
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 5, 5, 10" HorizontalOptions="Center">
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                            <Label Text="-" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#951b81" Margin="8, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10">
+                            <Image Source="plus5_blue.png" Aspect="AspectFit" WidthRequest="100" VerticalOptions="Center"/>
+                            <Label Text="8 9 0 8 9" TextColor="#0096cf" FontSize="22" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 0, 5, 10">
+                            <Label Text="Nächste Ziehung" TextColor="#565556" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+                            <Label Text="Mittwoch, 18:25 Uhr" TextColor="#565556" FontSize="18" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button Text="Detail" TextColor="#565556" BackgroundColor="White" FontSize="18" FontAttributes="Bold" Margin="10, 0, 0, 0" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Start"/>
+                            <Button Text="Historisch" TextColor="#8a6d3b" BackgroundColor="White" FontSize="18" FontAttributes="Bold" Margin="0, 0, 10, 0" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <!-- KENO END -->
+
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- AdMob banner START -->
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+            <Ad:AdBanner Size="SmartBannerPortrait" HorizontalOptions="Center" VerticalOptions="End"/>
+        </StackLayout>
+        <!-- AdMob banner END -->
+    </StackLayout>
+</ContentPage>

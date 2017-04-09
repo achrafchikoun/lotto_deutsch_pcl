@@ -16,7 +16,7 @@ namespace App2.iOS
 
         public AdInterstitial_iOS()
         {
-            LoadAd();
+            //LoadAd();
             interstitial.ScreenDismissed += (s, e) => LoadAd();
         }
 
@@ -27,15 +27,26 @@ namespace App2.iOS
 
             var request = Request.GetDefaultRequest();
             interstitial.LoadRequest(request);
+            interstitial.AdReceived += (sender, args) =>
+            {
+                if (interstitial.IsReady)
+                {
+                    var viewController = UIApplication.SharedApplication.KeyWindow.RootViewController;
+                    interstitial.PresentFromRootViewController(viewController);
+                }
+            };
         }
+
+        
 
         public void ShowAd()
         {
-            if (interstitial.IsReady)
+            LoadAd();
+            /*if (interstitial.IsReady)
             {
                 var viewController = UIApplication.SharedApplication.KeyWindow.RootViewController;
                 interstitial.PresentFromRootViewController(viewController);
-            }
+            }*/
         }
     }
 }
