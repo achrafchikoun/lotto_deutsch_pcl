@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App2
+namespace App2.Detail
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class GluecksspiralePage : ContentPage
     {
-        public Page1()
+        public GluecksspiralePage()
         {
             InitializeComponent();
         }

@@ -63,7 +63,7 @@ namespace App2
         {
             try
             {
-                Navigation.PushAsync(new Page1());
+                Navigation.PushAsync(new HomePage());
             }
             catch (Exception ex)
             {
