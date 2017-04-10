@@ -163,7 +163,12 @@ namespace App2
 
         private void btnEurojackpotHistorisch_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Warnung", "Bitte verbinden Sie mit dem Internet und versuchen Sie es erneut.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new EurojackpotHistorischPage());
         }
 
         private void btnGluecksspiraleDetail_Clicked(object sender, EventArgs e)
@@ -178,7 +183,12 @@ namespace App2
 
         private void btnGluecksspiraleHistorisch_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Warnung", "Bitte verbinden Sie mit dem Internet und versuchen Sie es erneut.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new GluecksspiraleHistorischPage());
         }
 
         private void btnKenoDetail_Clicked(object sender, EventArgs e)
@@ -193,7 +203,12 @@ namespace App2
 
         private void btnKenoHistorisch_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Warnung", "Bitte verbinden Sie mit dem Internet und versuchen Sie es erneut.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new KenoHistorischPage());
         }
     }
 }
