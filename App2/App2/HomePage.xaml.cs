@@ -26,10 +26,16 @@ namespace App2
         {
             InitializeComponent();
 
-            adInterstitial = DependencyService.Get<IAdInterstitial>();
+            GlobalVariable.count++;
+            if (GlobalVariable.count == 4)
+            {
+                GlobalVariable.count = 0;
 
-            adInterstitial.ShowAd();
-            
+                adInterstitial = DependencyService.Get<IAdInterstitial>();
+
+                adInterstitial.ShowAd();
+            }
+
             callAPI();
             
         }

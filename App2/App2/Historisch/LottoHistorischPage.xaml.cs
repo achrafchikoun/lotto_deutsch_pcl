@@ -1,4 +1,5 @@
 ﻿using Acr.UserDialogs;
+using App2.AdMob;
 using App2.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -18,9 +19,21 @@ namespace App2.Historisch
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LottoHistorischPage : ContentPage
     {
+        IAdInterstitial adInterstitial;
+
         public LottoHistorischPage()
         {
             InitializeComponent();
+
+            GlobalVariable.count++;
+            if (GlobalVariable.count == 4)
+            {
+                GlobalVariable.count = 0;
+
+                adInterstitial = DependencyService.Get<IAdInterstitial>();
+
+                adInterstitial.ShowAd();
+            }
 
             callAPI();
         }

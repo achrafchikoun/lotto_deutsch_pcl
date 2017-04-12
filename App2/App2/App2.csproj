@@ -52,6 +52,7 @@
     <Compile Include="Detail\LottoDetailPage.xaml.cs">
       <DependentUpon>LottoDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GlobalVariable.cs" />
     <Compile Include="Historisch\EurojackpotHistorischPage.xaml.cs">
       <DependentUpon>EurojackpotHistorischPage.xaml</DependentUpon>
     </Compile>
