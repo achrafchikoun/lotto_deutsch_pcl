@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Lotto Deutschland</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.App2</string>
+	<string>com.lotto.App2</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
@@ -47,9 +47,11 @@
 		<string>Icon-Small.png</string>
 		<string>Icon-Small@2x.png</string>
 	</array>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>CFBundleShortVersionString</key>
+	<key>NSAppTransportSecurity</key>
+<dict>
+        <key>NSAllowsArbitraryLoads</key>
+    <true/>
+</dict>
 	<string></string>
 </dict>
 </plist>

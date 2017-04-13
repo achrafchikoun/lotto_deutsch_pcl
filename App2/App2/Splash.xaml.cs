@@ -18,6 +18,7 @@ namespace App2
         public Splash()
         {
             InitializeComponent();
+
             NavigationPage.SetHasNavigationBar(this, false);
 
             timer = DependencyService.Get<IAdvancedTimer>();

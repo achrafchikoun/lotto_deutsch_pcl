@@ -13,7 +13,7 @@
                     <RowDefinition Height="600" />
                 </Grid.RowDefinitions>
                 <Image Source="eurojackpot.png" Aspect="AspectFit" WidthRequest="150" HorizontalOptions="Center" Margin="0, 10, 0, 0" Grid.Row="0"/>
-                <WebView Source="http://achrafchikoun.com/deutsch/lotto_deutsch_detail/eurojackpot.html" Margin="5, 0, 5, 0" Grid.Row="1"/>
+                <WebView x:Name="webview" Source="http://achrafchikoun.com/deutsch/lotto_deutsch_detail/eurojackpot.html" Margin="5, 0, 5, 0" Grid.Row="1"/>
             </Grid>
         </ScrollView>
 

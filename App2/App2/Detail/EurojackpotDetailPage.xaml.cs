@@ -28,6 +28,7 @@ namespace App2.Detail
 
                 adInterstitial.ShowAd();
             }
+            
         }
     }
 }

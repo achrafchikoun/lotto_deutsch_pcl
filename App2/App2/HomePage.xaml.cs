@@ -3,6 +3,7 @@ using App2.AdMob;
 using App2.Detail;
 using App2.Historisch;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Plugin.Connectivity;
 using System;
 using System.Collections.Generic;
@@ -27,17 +28,13 @@ namespace App2
             InitializeComponent();
 
             GlobalVariable.count++;
-            if (GlobalVariable.count == 4)
-            {
-                GlobalVariable.count = 0;
 
-                adInterstitial = DependencyService.Get<IAdInterstitial>();
+            adInterstitial = DependencyService.Get<IAdInterstitial>();
 
-                adInterstitial.ShowAd();
-            }
+            adInterstitial.ShowAd();
 
             callAPI();
-            
+
         }
 
         private async Task callAPI()
@@ -56,75 +53,75 @@ namespace App2
 
                     //lotto_deutsh
                     dynamic lotto_deutsh = output["lotto_deutsh"];
-                    lotto_n1.Text = lotto_deutsh[0]["n1"];
-                    lotto_n2.Text = lotto_deutsh[0]["n2"];
-                    lotto_n3.Text = lotto_deutsh[0]["n3"];
-                    lotto_n4.Text = lotto_deutsh[0]["n4"];
-                    lotto_n5.Text = lotto_deutsh[0]["n5"];
-                    lotto_n6.Text = lotto_deutsh[0]["n6"];
-                    lotto_n7.Text = lotto_deutsh[0]["n7"];
-                    lotto_spiel.Text = lotto_deutsh[0]["spiel77"];
-                    lotto_super.Text = lotto_deutsh[0]["super6"];
-                    lotto_tirage_du.Text = lotto_deutsh[0]["tirage_du"];
-                    lotto_prochain_tirage.Text = lotto_deutsh[0]["prochain_tirage"];
+                    lotto_n1.Text = lotto_deutsh[0]["n1"].Value;
+                    lotto_n2.Text = lotto_deutsh[0]["n2"].Value;
+                    lotto_n3.Text = lotto_deutsh[0]["n3"].Value;
+                    lotto_n4.Text = lotto_deutsh[0]["n4"].Value;
+                    lotto_n5.Text = lotto_deutsh[0]["n5"].Value;
+                    lotto_n6.Text = lotto_deutsh[0]["n6"].Value;
+                    lotto_n7.Text = lotto_deutsh[0]["n7"].Value;
+                    lotto_spiel.Text = lotto_deutsh[0]["spiel77"].Value;
+                    lotto_super.Text = lotto_deutsh[0]["super6"].Value;
+                    lotto_tirage_du.Text = lotto_deutsh[0]["tirage_du"].Value;
+                    lotto_prochain_tirage.Text = lotto_deutsh[0]["prochain_tirage"].Value;
 
                     //eurojackpot_deutsh
                     dynamic eurojackpot_deutsh = output["eurojackpot_deutsh"];
-                    eurojackpot_n1.Text = eurojackpot_deutsh[0]["n1"];
-                    eurojackpot_n2.Text = eurojackpot_deutsh[0]["n2"];
-                    eurojackpot_n3.Text = eurojackpot_deutsh[0]["n3"];
-                    eurojackpot_n4.Text = eurojackpot_deutsh[0]["n4"];
-                    eurojackpot_n5.Text = eurojackpot_deutsh[0]["n5"];
-                    eurojackpot_n6.Text = eurojackpot_deutsh[0]["n6"];
-                    eurojackpot_n7.Text = eurojackpot_deutsh[0]["n7"];
-                    eurojackpot_n8.Text = eurojackpot_deutsh[0]["n8"];
-                    eurojackpot_n9.Text = eurojackpot_deutsh[0]["n9"];
-                    eurojackpot_prochain_tirage.Text = eurojackpot_deutsh[0]["date_limite"];
+                    eurojackpot_n1.Text = eurojackpot_deutsh[0]["n1"].Value;
+                    eurojackpot_n2.Text = eurojackpot_deutsh[0]["n2"].Value;
+                    eurojackpot_n3.Text = eurojackpot_deutsh[0]["n3"].Value;
+                    eurojackpot_n4.Text = eurojackpot_deutsh[0]["n4"].Value;
+                    eurojackpot_n5.Text = eurojackpot_deutsh[0]["n5"].Value;
+                    eurojackpot_n6.Text = eurojackpot_deutsh[0]["n6"].Value;
+                    eurojackpot_n7.Text = eurojackpot_deutsh[0]["n7"].Value;
+                    eurojackpot_n8.Text = eurojackpot_deutsh[0]["n8"].Value;
+                    eurojackpot_n9.Text = eurojackpot_deutsh[0]["n9"].Value;
+                    eurojackpot_prochain_tirage.Text = eurojackpot_deutsh[0]["date_limite"].Value;
 
                     //gluecksspirale_deutsh
                     dynamic gluecksspirale_deutsh = output["gluecksspirale_deutsh"];
-                    gluecksspirale_n1.Text = gluecksspirale_deutsh[0]["n1"];
-                    gluecksspirale_n2.Text = gluecksspirale_deutsh[0]["n2"];
-                    gluecksspirale_n3.Text = gluecksspirale_deutsh[0]["n3"];
-                    gluecksspirale_n4.Text = gluecksspirale_deutsh[0]["n4"];
-                    gluecksspirale_n5.Text = gluecksspirale_deutsh[0]["n5"];
-                    gluecksspirale_n6.Text = gluecksspirale_deutsh[0]["n6"];
-                    gluecksspirale_n7.Text = gluecksspirale_deutsh[0]["n7"];
-                    gluecksspirale_n8.Text = gluecksspirale_deutsh[0]["n8"];
-                    gluecksspirale_n9.Text = gluecksspirale_deutsh[0]["n9"];
-                    gluecksspirale_n10.Text = gluecksspirale_deutsh[0]["n10"];
-                    gluecksspirale_n11.Text = gluecksspirale_deutsh[0]["n11"];
-                    gluecksspirale_n12.Text = gluecksspirale_deutsh[0]["n12"];
-                    gluecksspirale_n13.Text = gluecksspirale_deutsh[0]["n13"];
-                    gluecksspirale_n14.Text = gluecksspirale_deutsh[0]["n14"];
-                    gluecksspirale_spiel.Text = gluecksspirale_deutsh[0]["spiel77"];
-                    gluecksspirale_super.Text = gluecksspirale_deutsh[0]["super6"];
-                    gluecksspirale_prochain_tirage.Text = gluecksspirale_deutsh[0]["prochain_tirage"];
+                    gluecksspirale_n1.Text = gluecksspirale_deutsh[0]["n1"].Value;
+                    gluecksspirale_n2.Text = gluecksspirale_deutsh[0]["n2"].Value;
+                    gluecksspirale_n3.Text = gluecksspirale_deutsh[0]["n3"].Value;
+                    gluecksspirale_n4.Text = gluecksspirale_deutsh[0]["n4"].Value;
+                    gluecksspirale_n5.Text = gluecksspirale_deutsh[0]["n5"].Value;
+                    gluecksspirale_n6.Text = gluecksspirale_deutsh[0]["n6"].Value;
+                    gluecksspirale_n7.Text = gluecksspirale_deutsh[0]["n7"].Value;
+                    gluecksspirale_n8.Text = gluecksspirale_deutsh[0]["n8"].Value;
+                    gluecksspirale_n9.Text = gluecksspirale_deutsh[0]["n9"].Value;
+                    gluecksspirale_n10.Text = gluecksspirale_deutsh[0]["n10"].Value;
+                    gluecksspirale_n11.Text = gluecksspirale_deutsh[0]["n11"].Value;
+                    gluecksspirale_n12.Text = gluecksspirale_deutsh[0]["n12"].Value;
+                    gluecksspirale_n13.Text = gluecksspirale_deutsh[0]["n13"].Value;
+                    gluecksspirale_n14.Text = gluecksspirale_deutsh[0]["n14"].Value;
+                    gluecksspirale_spiel.Text = gluecksspirale_deutsh[0]["spiel77"].Value;
+                    gluecksspirale_super.Text = gluecksspirale_deutsh[0]["super6"].Value;
+                    gluecksspirale_prochain_tirage.Text = gluecksspirale_deutsh[0]["prochain_tirage"].Value;
 
                     //keno_deutsh
                     dynamic keno_deutsh = output["keno_deutsh"];
-                    keno_n1.Text = keno_deutsh[0]["n1"];
-                    keno_n2.Text = keno_deutsh[0]["n2"];
-                    keno_n3.Text = keno_deutsh[0]["n3"];
-                    keno_n4.Text = keno_deutsh[0]["n4"];
-                    keno_n5.Text = keno_deutsh[0]["n5"];
-                    keno_n6.Text = keno_deutsh[0]["n6"];
-                    keno_n7.Text = keno_deutsh[0]["n7"];
-                    keno_n8.Text = keno_deutsh[0]["n8"];
-                    keno_n9.Text = keno_deutsh[0]["n9"];
-                    keno_n10.Text = keno_deutsh[0]["n10"];
-                    keno_n11.Text = keno_deutsh[0]["n11"];
-                    keno_n12.Text = keno_deutsh[0]["n12"];
-                    keno_n13.Text = keno_deutsh[0]["n13"];
-                    keno_n14.Text = keno_deutsh[0]["n14"];
-                    keno_n15.Text = keno_deutsh[0]["n15"];
-                    keno_n16.Text = keno_deutsh[0]["n16"];
-                    keno_n17.Text = keno_deutsh[0]["n17"];
-                    keno_n18.Text = keno_deutsh[0]["n18"];
-                    keno_n19.Text = keno_deutsh[0]["n19"];
-                    keno_n20.Text = keno_deutsh[0]["n20"];
-                    keno_plus5.Text = keno_deutsh[0]["plus5"];
-                    keno_prochain_tirage.Text = keno_deutsh[0]["prochain_tirage"];
+                    keno_n1.Text = keno_deutsh[0]["n1"].Value;
+                    keno_n2.Text = keno_deutsh[0]["n2"].Value;
+                    keno_n3.Text = keno_deutsh[0]["n3"].Value;
+                    keno_n4.Text = keno_deutsh[0]["n4"].Value;
+                    keno_n5.Text = keno_deutsh[0]["n5"].Value;
+                    keno_n6.Text = keno_deutsh[0]["n6"].Value;
+                    keno_n7.Text = keno_deutsh[0]["n7"].Value;
+                    keno_n8.Text = keno_deutsh[0]["n8"].Value;
+                    keno_n9.Text = keno_deutsh[0]["n9"].Value;
+                    keno_n10.Text = keno_deutsh[0]["n10"].Value;
+                    keno_n11.Text = keno_deutsh[0]["n11"].Value;
+                    keno_n12.Text = keno_deutsh[0]["n12"].Value;
+                    keno_n13.Text = keno_deutsh[0]["n13"].Value;
+                    keno_n14.Text = keno_deutsh[0]["n14"].Value;
+                    keno_n15.Text = keno_deutsh[0]["n15"].Value;
+                    keno_n16.Text = keno_deutsh[0]["n16"].Value;
+                    keno_n17.Text = keno_deutsh[0]["n17"].Value;
+                    keno_n18.Text = keno_deutsh[0]["n18"].Value;
+                    keno_n19.Text = keno_deutsh[0]["n19"].Value;
+                    keno_n20.Text = keno_deutsh[0]["n20"].Value;
+                    keno_plus5.Text = keno_deutsh[0]["plus5"].Value;
+                    keno_prochain_tirage.Text = keno_deutsh[0]["prochain_tirage"].Value;
 
                     UserDialogs.Instance.HideLoading();
                 }
@@ -132,7 +129,7 @@ namespace App2
             catch (Exception ex)
             {
                 UserDialogs.Instance.HideLoading();
-                await DisplayAlert("Fehler", "Ein Fehler ist aufgetreten, bitte versuchen Sie es später noch einmal", "OK");
+                await DisplayAlert("Fehler", ex.Message.ToString(), "OK");
                 //Debug.WriteLine(@"ERROR {0}", ex.Message);
             }
         }
