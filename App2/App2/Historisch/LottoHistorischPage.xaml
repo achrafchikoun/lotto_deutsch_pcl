@@ -14,26 +14,26 @@
 
                         <StackLayout Orientation="Vertical" BackgroundColor="White">
                             <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5" HorizontalOptions="Center" Margin="0, 5, 0, 0">
-                                <Label Text="{Binding tirage_du}" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label Text="{Binding tirage_du}" FontSize="16"  HorizontalOptions="Start" VerticalOptions="Center"/>
                                 <Image Source="calendar.png" Aspect="AspectFit" WidthRequest="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
                             </StackLayout>
                             <BoxView HeightRequest="1" BackgroundColor="#c80513" HorizontalOptions="FillAndExpand" Margin="30, 0, 30, 0"/>
                             <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
-                                <Label Text="{Binding N_1}" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513"/>
-                                <Label Text="{Binding N_2}" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
-                                <Label Text="{Binding N_3}" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
-                                <Label Text="{Binding N_4}" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
-                                <Label Text="{Binding N_5}" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
-                                <Label Text="{Binding N_6}" TextColor="White" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
-                                <Label Text="{Binding N_7}" TextColor="#565556" FontSize="23" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#dddddd" Margin="8, 0, 0, 0"/>
+                                <Label Text="{Binding N_1}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513"/>
+                                <Label Text="{Binding N_2}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                                <Label Text="{Binding N_3}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                                <Label Text="{Binding N_4}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                                <Label Text="{Binding N_5}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                                <Label Text="{Binding N_6}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#c80513" Margin="8, 0, 0, 0"/>
+                                <Label Text="{Binding N_7}" TextColor="#565556" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#dddddd" Margin="8, 0, 0, 0"/>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10">
                                 <Image Source="spiel77_blue.png" Aspect="AspectFit" WidthRequest="100" VerticalOptions="Center"/>
-                                <Label Text="{Binding N_spiel}" TextColor="#0096cf" FontSize="22" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                                <Label Text="{Binding N_spiel}" TextColor="#0096cf" FontSize="19" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal" Margin="5, 0, 5, 10">
                                 <Image Source="super6_purple.png" Aspect="AspectFit" WidthRequest="100" VerticalOptions="Center"/>
-                                <Label Text="{Binding N_super}" TextColor="#c30062" FontSize="22" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
+                                <Label Text="{Binding N_super}" TextColor="#c30062" FontSize="19" FontAttributes="Bold" Margin="10, 0, 0, 0" VerticalOptions="Center"/>
                             </StackLayout>
                         </StackLayout>
 

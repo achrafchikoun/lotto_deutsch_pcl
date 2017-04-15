@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X5k-f2-b5h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
@@ -16,24 +16,162 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Icon-60.png" translatesAutoresizingMaskIntoConstraints="NO" id="23">
-                                <rect key="frame" x="270" y="270" width="60" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lotto.png" translatesAutoresizingMaskIntoConstraints="NO" id="23" horizontalHuggingPriority="239">
+                                <rect key="frame" x="80" y="187" width="214" height="43"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint id="87" firstItem="23" firstAttribute="width" constant="214"/>
+                                    <constraint id="88" firstItem="23" firstAttribute="height" constant="43"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="87"/>
+                                        <exclude reference="88"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="87"/>
+                                        <include reference="88"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="lotto.png" translatesAutoresizingMaskIntoConstraints="NO" id="92" horizontalHuggingPriority="239">
+                                <rect key="frame" x="88" y="247" width="214" height="25"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="eurojackpot.png">
+                                    <mask key="constraints">
+                                        <include reference="95"/>
+                                        <include reference="96"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="95" firstItem="92" firstAttribute="width" constant="214"/>
+                                    <constraint id="96" firstItem="92" firstAttribute="height" constant="25"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="95"/>
+                                        <exclude reference="96"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="lotto.png" translatesAutoresizingMaskIntoConstraints="NO" id="99" horizontalHuggingPriority="239">
+                                <rect key="frame" x="80" y="301" width="214" height="25"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="gluecksspirale.png">
+                                    <mask key="constraints">
+                                        <include reference="102"/>
+                                        <include reference="103"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="102" firstItem="99" firstAttribute="width" constant="214"/>
+                                    <constraint id="103" firstItem="99" firstAttribute="height" constant="25"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="102"/>
+                                        <exclude reference="103"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lotto.png" translatesAutoresizingMaskIntoConstraints="NO" id="106" horizontalHuggingPriority="239">
+                                <rect key="frame" x="111" y="363" width="168" height="29"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="keno.png">
+                                    <mask key="constraints">
+                                        <include reference="111"/>
+                                        <include reference="112"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="111" firstItem="106" firstAttribute="width" constant="168"/>
+                                    <constraint id="112" firstItem="106" firstAttribute="height" constant="29"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="111"/>
+                                        <exclude reference="112"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" colorSpace="calibratedRGB" red="0" green="0.52549019607843139" blue="1" alpha="1"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.8901960784313725" green="0.74117647058823533" blue="0" alpha="1"/>
                         <constraints>
-                            <constraint firstItem="23" firstAttribute="centerY" secondItem="yd7-JS-zBw" secondAttribute="centerY" priority="1" id="39"/>
-                            <constraint firstItem="23" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" priority="1" id="41"/>
+                            <constraint id="89" firstItem="23" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX"/>
+                            <constraint id="91" firstItem="23" firstAttribute="top" secondItem="Y8P-hJ-Z43" secondAttribute="bottom" constant="167"/>
+                            <constraint id="97" firstItem="92" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" constant="7"/>
+                            <constraint id="98" firstItem="92" firstAttribute="centerY" secondItem="23" secondAttribute="centerY" constant="51"/>
+                            <constraint id="104" firstItem="99" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX"/>
+                            <constraint id="105" firstItem="99" firstAttribute="centerY" secondItem="92" secondAttribute="centerY" constant="54"/>
+                            <constraint id="113" firstItem="106" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" constant="7"/>
+                            <constraint id="114" firstItem="106" firstAttribute="centerY" secondItem="99" secondAttribute="centerY" constant="64"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="89"/>
+                                <exclude reference="91"/>
+                                <exclude reference="97"/>
+                                <exclude reference="98"/>
+                                <exclude reference="104"/>
+                                <exclude reference="105"/>
+                                <exclude reference="113"/>
+                                <exclude reference="114"/>
+                            </mask>
+                            <mask key="subviews">
+                                <exclude reference="92"/>
+                                <exclude reference="99"/>
+                                <exclude reference="106"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="89"/>
+                                <include reference="91"/>
+                                <include reference="97"/>
+                                <include reference="98"/>
+                                <include reference="104"/>
+                                <include reference="105"/>
+                                <include reference="113"/>
+                                <include reference="114"/>
+                            </mask>
+                            <mask key="subviews">
+                                <include reference="92"/>
+                                <include reference="99"/>
+                                <include reference="106"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-xm-WK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="349" y="339"/>
+            <point key="canvasLocation" x="353" y="329"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-60.png" width="180" height="180"/>
+        <image name="Icon-60.png" width="60" height="60"/>
+        <image name="calendar.png" width="50" height="50"/>
+        <image name="contact.png" width="200" height="137"/>
+        <image name="Default-568h.png" width="320" height="568"/>
+        <image name="Default-Landscape.png" width="1024" height="748"/>
+        <image name="Default-Portrait.png" width="768" height="1004"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="eurojackpot.png" width="166" height="25"/>
+        <image name="gluecksspirale.png" width="166" height="46"/>
+        <image name="Icon-72.png" width="72" height="72"/>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="Icon-Small-40.png" width="40" height="40"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="keno.png" width="166" height="48"/>
+        <image name="lotto.png" width="300" height="43"/>
+        <image name="plus5_blue.png" width="236" height="70"/>
+        <image name="spiel77_blue.png" width="600" height="147"/>
+        <image name="super6_purple.png" width="600" height="150"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
 </document>

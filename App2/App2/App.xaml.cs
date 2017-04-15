@@ -13,7 +13,11 @@ namespace App2
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Splash());
+            MainPage = new NavigationPage(new HomePage())
+            {
+                BarBackgroundColor = Color.FromHex("#e3bd00"),
+                BarTextColor = Color.White,
+            };
         }
 
         protected override void OnStart()
