@@ -80,6 +80,7 @@ namespace App2
                     eurojackpot_n7.Text = eurojackpot_deutsh[0]["n7"].Value;
                     eurojackpot_n8.Text = eurojackpot_deutsh[0]["n8"].Value;
                     eurojackpot_n9.Text = eurojackpot_deutsh[0]["n9"].Value;
+                    eurojackpot_tirage_du.Text = lotto_deutsh[0]["tirage_du"].Value;
                     eurojackpot_prochain_tirage.Text = eurojackpot_deutsh[0]["date_limite"].Value;
 
                     //gluecksspirale_deutsh
@@ -100,6 +101,7 @@ namespace App2
                     gluecksspirale_n14.Text = gluecksspirale_deutsh[0]["n14"].Value;
                     gluecksspirale_spiel.Text = gluecksspirale_deutsh[0]["spiel77"].Value;
                     gluecksspirale_super.Text = gluecksspirale_deutsh[0]["super6"].Value;
+                    gluecksspirale_tirage_du.Text = lotto_deutsh[0]["tirage_du"].Value;
                     gluecksspirale_prochain_tirage.Text = gluecksspirale_deutsh[0]["prochain_tirage"].Value;
 
                     //keno_deutsh
@@ -125,6 +127,7 @@ namespace App2
                     keno_n19.Text = keno_deutsh[0]["n19"].Value;
                     keno_n20.Text = keno_deutsh[0]["n20"].Value;
                     keno_plus5.Text = keno_deutsh[0]["plus5"].Value;
+                    keno_tirage_du.Text = lotto_deutsh[0]["tirage_du"].Value;
                     keno_prochain_tirage.Text = keno_deutsh[0]["prochain_tirage"].Value;
 
                     UserDialogs.Instance.HideLoading();
