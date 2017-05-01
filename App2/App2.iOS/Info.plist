@@ -44,18 +44,20 @@
 		<string>Default-Landscape@2x.png</string>
 		<string>Default-Portrait.png</string>
 		<string>Default-Portrait@2x.png</string>
+		<string>Icon-Small-50@2x.png</string>
+		<string>Icon-Small-50.png</string>
 		<string>Icon-Small-40.png</string>
 		<string>Icon-Small-40@2x.png</string>
 		<string>Icon-Small.png</string>
 		<string>Icon-Small@2x.png</string>
 	</array>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen.storyboard</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>CFBundleShortVersionString</key>
 	<string></string>
 </dict>

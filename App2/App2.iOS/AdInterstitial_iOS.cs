@@ -18,7 +18,7 @@ namespace App2.iOS
         public AdInterstitial_iOS()
         {
             // TODO: change this id to your admob id
-            interstitial = new Interstitial("ca-app-pub-3940256099942544/1033173712");
+            interstitial = new Interstitial("ca-app-pub-9872655177366595/6503703265");
             ShowAd();
         }
 
